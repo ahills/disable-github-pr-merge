@@ -1,6 +1,7 @@
 function toggleMergeButton(element) {
-  if (element.className.indexOf("primary") > -1) {
-    element.className = element.className.replace(/primary/g, 'disabled').replace(/js-details-target/g, '');
+  element.className = element.className.replace(/primary/g, 'disabled').replace(/danger/g, 'disabled').replace(/js-details-target/g, '');
+  if (element.className.indexOf('disabled') < 0) {
+    element.className += 'btn-disabled';
   }
 }
 
