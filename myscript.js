@@ -26,7 +26,5 @@ function observeMergeButton() {
   observer.observe(target, config);
 }
 
-window.onload = function() {
-  toggleMergeButton(document.querySelector(".merge-branch-action"));
-  observeMergeButton();
-}
+toggleMergeButton(document.querySelector(".merge-branch-action"));
+observeMergeButton();
